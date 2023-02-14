@@ -19,10 +19,14 @@ module.exports = {
     backgroundImage:{
       'coloredSide' : "url('/images/bg-main-desktop.png')",
       'frontCard' : "url('/images/bg-card-front.png')",
-      'backCard' : "url('/images/bg-card-back.png')"
+      'backCard' : "url('/images/bg-card-back.png')",
+      'logo': "url('/images/card-logo.svg')"
     },
     screens: {
-
+      'lg': "1399px",
+      'md':"1032px",
+      'ss': "628px",
+      'xs': "366px"
     },
   },
   plugins: [],

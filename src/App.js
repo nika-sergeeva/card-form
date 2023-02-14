@@ -10,7 +10,7 @@ function submit(){
   setSubmitted(oldOne => !oldOne)
 }
   return (
-    <div className="flex font-spaceGrotesk font-[18px] h-[100vh]">
+    <div className="flex lg:flex-row flex-col font-spaceGrotesk font-[18px] h-[100vh]">
         <LeftSide />
         {submitted ?  
         <Thanks submit={submit} /> :
