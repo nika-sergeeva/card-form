@@ -1,6 +1,6 @@
 import React from 'react'
 
-const LeftSide = () => {
+const LeftSide = ({name, mm, yy, cvc, number}) => {
   return (
     <div className="bg-veryDarkViolet lg:w-[35%] w-full lg:h-auto h-[30%] bg-coloredSide bg-no-repeat bg-cover flex items-center justify-center">
           <div className="relative flex lg:flex-col flex-col-reverse items-center justify-center">
@@ -17,10 +17,10 @@ const LeftSide = () => {
             <div className='bg-logo bg-center bg-cover bg-no-repeat lg:w-[84px] w-[40px] lg:h-[47px] h-[22px]'></div>
             
             <div className="text-white">
-                <div className="lg:text-[25px] text-[18px]">0000 0000 0000 0000</div>
+                <div className="lg:text-[25px] text-[18px]">{number? number : "0000 0000 0000 0000"}</div>
                 <div className="flex justify-between pt-3">
-                  <p className="uppercase lg:text-[14px] text-[10px] tracking-widest">Jane Appleseed</p>
-                  <div className="uppercase lg:text-[14px] text-[12px] tracking-widest">00/00</div>
+                  <p className="uppercase lg:text-[14px] text-[10px] tracking-widest">{name? name : "jane appleseed"}</p>
+                  <div className="uppercase lg:text-[14px] text-[12px] tracking-widest">{mm? mm : '00'}/{yy? yy : "00"}</div>
                 </div>
             </div>
             
@@ -34,7 +34,7 @@ const LeftSide = () => {
             max-w-[447px] min-w-[290px] max-h-[245px] min-h-[140px] 
             lg:mt-8 mt-0 ss:ml-40 xs:ml-10 ml-5 bg-center`}>
               <div className='relative'>
-              <div className='text-white absolute lg:top-[110px] top-[60px] lg:left-[355px] left-[230px] lg:text-[14px] text-[12px] tracking-widest'>000</div>
+              <div className='text-white absolute lg:top-[110px] top-[60px] lg:left-[355px] left-[230px] lg:text-[14px] text-[12px] tracking-widest'>{cvc? cvc : "000"}</div>
 
               </div>
             </div>
