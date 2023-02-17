@@ -19,6 +19,8 @@ const [showNewCard, setShowNewCard] = useState({
   cvc: ''
 })
 
+
+
   return (
     <div className="flex lg:flex-row flex-col font-spaceGrotesk font-[18px] h-[100vh]">
         <LeftSide 
