@@ -83,8 +83,7 @@ const MyForm = ({formNewCard, submit}) => {
                     <div>
                         <label htmlFor="mm" className="uppercase text-[13px]">exp. date (mm/yy)</label>
                         <div className="flex">
-                        <div className={`relative max-w-[100px] h-[40px] mr-2 mb-6 border-[1px] 
-                        border-lightGrayish rounded-[6px] py-2 px-5
+                        <div className={`relative max-w-[100px] h-[40px] mr-2 mb-6 border-[1px] rounded-[6px] py-2 px-5
                         ${errors.mm?.message? "border-rose-500" : "border-lightGrayish"}`}>
                             <input 
                             {...register("mm", {
@@ -105,7 +104,7 @@ const MyForm = ({formNewCard, submit}) => {
                             className="w-full h-full"/>
                             <Errors message={errors.mm?.message} text={errors.mm?.message}/>
                         </div>
-                        <div className={`relative max-w-[100px] h-[40px] mb-6 border-[1px] border-lightGrayish rounded-[6px] py-2 px-5
+                        <div className={`relative max-w-[100px] h-[40px] mb-6 border-[1px] rounded-[6px] py-2 px-5
                         ${errors.yy?.message? "border-rose-500" : "border-lightGrayish"}`}>
                             <input 
                             {...register("yy", {
@@ -126,7 +125,7 @@ const MyForm = ({formNewCard, submit}) => {
                     </div>
                     <div>
                         <label htmlFor="cvc" className="uppercase text-[13px] ml-4">cvc</label>
-                        <div className={`relative w-auto h-[40px] border-[1px] ml-4 mb-9 border-lightGrayish rounded-[6px] py-2 px-5
+                        <div className={`relative w-auto h-[40px] border-[1px] ml-4 mb-9 rounded-[6px] py-2 px-5
                         ${errors.cvc?.message? "border-rose-500" : "border-lightGrayish"}`}>
                             <input 
                             {...register("cvc", {
